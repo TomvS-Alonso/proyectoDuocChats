@@ -1,0 +1,43 @@
+.avatar-login {
+    display: flex;
+    justify-content: center !important;
+  }
+  
+  .boton-login {
+    display: flex;
+    justify-content: center !important;
+  }
+  
+  #texto-crear-cuenta {
+    text-align: center;
+    display: block;
+  }
+  ion-title {
+    text-align: center;
+  }
+  
+  .card {
+    margin-top: 10px;
+    border: none;
+    width: 350px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsla(205, 46%, 30%, 1);
+    background: linear-gradient(75deg, #1A2B6A 0%, rgb(5, 106, 146) 100%);
+  }
+  
+  .card h1,
+  h6 {
+    color: white;
+  }
+  
+  .card ion-label {
+    color: white;
+  }
+  
+  .card ion-input {
+    color: white;
+  }

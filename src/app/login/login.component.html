@@ -1,0 +1,37 @@
+<ion-content fullscreen="true">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <ion-item-group>
+                        <div class="avatar-login mt-2 mb-2">
+                            <img
+                                src="https://lh3.googleusercontent.com/proxy/9MxfcHQ1qo-M5jmOqBDKXxbYuHoDYpCY-ZiG5UH2OpGsndvNHz0RtZDX3-5hxAXmbJZeokHRKjtRVEv1xc_7zf5zDugxmOSAlg" />
+                        </div>
+                        <ion-item color="transparent">
+                            <ion-label position="stacked">Nombre de usuario</ion-label>
+                            <ion-input placeholder="" type="email" required="" autocomplete="on"
+                                formControlName="email"></ion-input>
+                        </ion-item>
+
+                        <ion-item color="transparent">
+                            <ion-label position="stacked">Contraseña</ion-label>
+                            <ion-input placeholder="" type="password" required=""
+                                formControlName="password"></ion-input>
+                        </ion-item>
+                    </ion-item-group>
+                    <br>
+                    <div class="mt-2 boton-login">
+                        <ion-button type="submit" color="warning" expand="block">Iniciar sesion</ion-button>
+                    </div>
+                    <ion-row>
+                        <ion-col>
+                            
+                        </ion-col>
+                    </ion-row>
+                    <ion-label id="texto-crear-cuenta">Registro</ion-label>
+                </form>
+            </div>
+        </div>
+    </div>
+</ion-content>
