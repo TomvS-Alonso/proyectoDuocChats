@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { principalComponent } from './principal/principal.component';
 import { loginComponent } from './login/login.component';
 import { NavBarComponent } from './components/navbar/navbar.component';
+import { chatComponent } from './chat/chat.component';
+import { registroComponent } from './registro/registro.component';
+import { perfilComponent } from './perfil/perfil.component';
 
 
 @NgModule({
@@ -16,11 +19,14 @@ import { NavBarComponent } from './components/navbar/navbar.component';
     AppComponent,
     principalComponent,
     loginComponent,
-    NavBarComponent 
+    NavBarComponent,
+    chatComponent,
+    registroComponent,
+    perfilComponent 
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy,}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
