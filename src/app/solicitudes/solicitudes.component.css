@@ -1,0 +1,5 @@
+.carta {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+}

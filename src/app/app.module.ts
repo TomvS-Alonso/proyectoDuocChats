@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsuarioServicioService } from './servicio/usuario-servicio.service';
 import { CommonModule } from '@angular/common';
 import { MensajeServicioService } from './servicio/mensaje-servicio.service';
+import { solicitudesComponent } from './solicitudes/solicitudes.component';
+import { opcionesComponent } from './opciones/opciones.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { MensajeServicioService } from './servicio/mensaje-servicio.service';
     NavBarComponent,
     chatComponent,
     registroComponent,
-    perfilComponent 
+    perfilComponent,
+    solicitudesComponent,
+    opcionesComponent,
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, CommonModule],

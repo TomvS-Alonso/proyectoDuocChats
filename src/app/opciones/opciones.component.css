@@ -1,0 +1,23 @@
+.opciones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin-top: 10px;
+    border: none;
+    width: 350px;
+    padding: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenido-navbar {
+    display: flex;
+    background-color: #0c499c;
+    color: white;
+}

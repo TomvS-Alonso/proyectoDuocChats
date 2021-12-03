@@ -1,0 +1,107 @@
+<nav-bar title="Centro de comunicacion"></nav-bar>
+<ion-content>
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button href="principal">
+                <ion-icon name="chatbox"></ion-icon>
+                <ion-label>Chats</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button href="solicitudes">
+                <ion-icon name="layers"></ion-icon>
+                <ion-label>Solicitudes</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button href="perfil">
+                <ion-icon name="person"></ion-icon>
+                <ion-label>Perfil</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        Salas
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-list>
+                            <ion-item>
+                                <ion-card class="carta">
+                                    <ion-card-header>
+                                        <ion-label>Sala 1</ion-label>
+                                    </ion-card-header>
+                                    <ion-card-content>
+                                        <ion-label>Profesor: Julio Herrera</ion-label>
+                                        <ion-label>Cantidad 15/30</ion-label>
+                                    </ion-card-content>
+                                </ion-card>
+                            </ion-item>
+                            <ion-item>
+                                <ion-card class="carta">
+                                    <ion-card-header>
+                                        <ion-label>Sala 2</ion-label>
+                                    </ion-card-header>
+
+                                    <ion-card-content>
+                                        <ion-label>Profesor: Pablo Salamanca</ion-label>
+                                        <ion-label>Cantidad 22/30</ion-label>
+                                    </ion-card-content>
+                                </ion-card>
+                            </ion-item>
+                            <ion-item>
+                                <ion-card class="carta">
+                                    <ion-card-header>
+                                        <ion-label>Sala 3</ion-label>
+                                    </ion-card-header>
+
+                                    <ion-card-content>
+                                        <ion-label>Profesor: No Asignado</ion-label>
+                                        <ion-label>Cantidad 0/30</ion-label>
+                                    </ion-card-content>
+                                </ion-card>
+                            </ion-item>
+                        </ion-list>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        Entidades
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-list>
+                            <ion-item>
+                                <ion-card class="carta">
+                                    <ion-label>CTCOM</ion-label>
+                                    <ion-label>Ubicacion: Piso ... / Sala ....</ion-label>
+                                </ion-card>
+                            </ion-item>
+                            <ion-item>
+                                <ion-card class="carta">
+                                    <ion-label>CITT</ion-label>
+                                    <ion-label>Ubicacion: Piso ... / Sala ....</ion-label>
+                                </ion-card>
+                            </ion-item>
+                            <ion-item>
+                                <ion-card class="carta">
+                                    <ion-label>Direccion</ion-label>
+                                    <ion-label>Ubicacion: Piso ... / Sala ....</ion-label>
+                                </ion-card>
+                            </ion-item>
+                        </ion-list>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
