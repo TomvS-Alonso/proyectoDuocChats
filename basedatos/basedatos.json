@@ -1,0 +1,20 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Tomas",
+      "apellidos": "Avendaño Parada",
+      "contrasena": "tomas123",
+      "correo": "Tomas@gmail.com",
+      "sede": "San Bernardo",
+      "carrera": "Ing Informatica",
+      "nombreUsuario": "Tomasho",
+      "id": 1
+    }
+  ],
+  "mensajes": [
+    {
+      "cuerpo": "Hola",
+      "id": 1
+    }
+  ]
+}

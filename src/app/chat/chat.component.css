@@ -1,0 +1,22 @@
+.contenido-navbar {
+    display: flex;
+    background-color: #0c499c;
+    color: rgb(255, 255, 255);
+}
+
+.entradaMensaje {
+    background-color: #5c5c5c!;
+    color: rgb(0, 0, 0);
+}
+
+.contenidoMensaje {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mensaje {
+    background-color: #4a81cb;
+    color: white;
+    width: fit-content;
+    float: right;
+}

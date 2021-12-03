@@ -1,1 +1,45 @@
-<nav-bar title="Nombre"></nav-bar>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="contenido-navbar">
+      <ion-button href="principal">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      <ion-title>{{ title }}</ion-title>
+      <ion-button color="light">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+      <ion-button color="light">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid
+  *ngFor="let mensaje of mensajes">
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-card class="mensaje">
+            <ion-card-content>
+              <ion-label class="contenidoMensaje">{{ mensaje.cuerpo }}</ion-label>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer id="final-scroll">
+  <ion-toolbar class="entradaMensaje">
+    <ion-input placeholder="Mensaje..." [(ngModel)]="mensaje.cuerpo"></ion-input>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="mandarMensaje()">
+        <ion-icon name="send"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

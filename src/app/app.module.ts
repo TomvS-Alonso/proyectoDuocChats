@@ -12,6 +12,11 @@ import { NavBarComponent } from './components/navbar/navbar.component';
 import { chatComponent } from './chat/chat.component';
 import { registroComponent } from './registro/registro.component';
 import { perfilComponent } from './perfil/perfil.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UsuarioServicioService } from './servicio/usuario-servicio.service';
+import { CommonModule } from '@angular/common';
+import { MensajeServicioService } from './servicio/mensaje-servicio.service';
 
 
 @NgModule({
@@ -25,8 +30,8 @@ import { perfilComponent } from './perfil/perfil.component';
     perfilComponent 
   ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy,}],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule, CommonModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy,}, UsuarioServicioService, MensajeServicioService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
